@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=768">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add fancyBox -->
+    <!--<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />-->
+    <!--<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>-->
+    <!--&lt;!&ndash; Add mousewheel plugin (this is optional) &ndash;&gt;-->
+    <!--<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>-->
+    <!--<script type="text/javascript" src="fancybox/lib/jquery-1.10.2.min.js"></script>-->
+    <!--&lt;!&ndash; Optionally add helpers - button, thumbnail and/or media &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />-->
+    <!--<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>-->
+    <!--<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>-->
+    <!--<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />-->
+    <!--<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>-->
+    <link rel='stylesheet prefetch' href='css/jquery.fancybox.min.css'>
+    <script src='jquery.fancybox.min.js'></script>
+    <script src='jquery.3.3.1.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+</head>
+<body>
+<!--<div id="nav" class="navigation">-->
+    <!--<div class="navigation__inner">-->
+        <!--<div class="main__left-cabinet">-->
+            <!--<div class="title title-cabinet">Мой кабинет</div>-->
+            <!--<div class="cabinet-block">-->
+                <!--<p>Ведущий менеджер</p>-->
+                <!--<p>Козленко Олег</p>-->
+                <!--<p>38 099 000 00 00</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<button id="show">Toggle Menu</button>-->
+
+
+        <div class="header-mob">
+            <div class="wrap_mob">
+                <a class="icon-menu icon-menu-2" href="index.html"><i class="fas fa-home icon active"></i></a>
+                <a class="icon-menu icon-menu-3" href="#"><i class="fas fa-sign-in-alt icon"></i></a>
+                <a class="icon-menu-1" href="#"><i class="fas fa-info-circle icon-1"></i></a>
+                <a class="icon-menu icon-menu-5" href="index1.html"><i class="fas fa-shopping-cart icon"></i></a>
+                <a class="icon-menu icon-menu-6" href="index2.html"><i class="fas fa-history icon"></i></a>
+                <a class="icon-menu icon-menu-7" href="index3.html"><i class="fas fa-cog icon"></i></a>
+                <a class="icon-menu icon-menu-8" href="index4.html"><i class="fas fa-comments icon"></i></a>
+                <a class="icon-menu icon-menu-4" href="index5.html"><i class="fas fa-shipping-fast icon"></i></a>
+            </div>
+
+            <a class="icon-menu icon-menu-4" href="#"><i class="fas fa-power-off icon"></i></a>
+        </div>
+
+        <section class="main">
+
+            <aside class="main__left">
+
+                <div class="icon-close">
+                    <i class="far fa-times-circle icon"></i>
+                </div>
+
+                <div class="main__left-cabinet">
+                    <div class="title title-cabinet">Мой кабинет</div>
+                    <div class="cabinet-block">
+                        <p>Ведущий менеджер</p>
+                        <p>Козленко Олег</p>
+                        <p>38 099 000 00 00</p>
+                    </div>
+                </div>
+                <div class="main__left-order">
+                    <div class="title title-order"><a href="index1-1.html">заказы</a></div>
+                    <div class="order-block">
+                        <ul>
+                            <li class="title title-block"><a href="#"> Телевизоры <i class="fas fa-caret-right"></i></a></li>
+                            <li class="title title-block"><a href="#"> Стиральные машины <i class="fas fa-caret-right"></i></a></li>
+                            <li class="title title-block"><a href="#"> Холодильники <i class="fas fa-caret-right"></i></a></li>
+                            <li class="title title-block"><a href="#"> Холодильники <i class="fas fa-caret-right"></i></a></li>
+                            <li class="title title-block"><a href="#"> Холодильники <i class="fas fa-caret-right"></i></a></li>
+                            <li class="title title-action">Только акции
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main__left-filter">
+                    <p>Фильтр отбора</p>
+                    <label class="container">фильтр1
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">фильтр2
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">фильтр3
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">фильтр4
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">фильтр5
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">фильтр6
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">фильтр7
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">фильтр8
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </aside>
+            <!--<div class="header">-->
+            <!--<div class="main__table main__table-head">-->
+            <!--<div class="slider-img"></div>-->
+            <!--<form class="search" action="/action_page.php">-->
+            <!--<input type="text" placeholder="Search.." name="search">-->
+            <!--<button type="submit">Обнулить поиск</button>-->
+            <!--</form>-->
+            <!--</div>-->
+
+            <!--</div>-->
+            <div class="main__table">
+                <div class="main__table-head">
+                    <div class="slider-img">
+                        <p class="slider-title">B2B portal</p>
+                    </div>
+                    <form class="search" action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Обнулить поиск</button>
+                    </form>
+                </div>
+                <div class="main__table-center">
+                    <table class="table">
+                        <tr>
+                            <th class="art">Артикул</th>
+                            <th>Бренд</th>
+                            <th>Под заказ</th>
+                            <th>Комментарий</th>
+                            <th>РРЦ</th>
+                            <th>Ваша цена</th>
+                            <th class="city">Киев</th>
+                            <th class="city">Харьков</th>
+                            <th class="city">Львов</th>
+                            <th class="city">Одесса</th>
+                            <th>Сумма</th>
+                        </tr>
+                        <tr>
+                            <td>Наименование 01</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 02</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 03</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 04</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 05</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 06</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 07</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 08</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 09</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 10</td>
+                            <td>Samsung</td>
+                            <td>Да</td>
+                            <td>Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>5-50<input type="text"></td>
+                            <td>0,00</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="main__table-bottom">
+                    <div class="availability">
+                        <div class="availability__block availability__block-table">
+                            <i class="fas fa-window-close icon"></i>Киев/Заказ - 25000,00грн./ логистика 500,00грн. / ВСЕГО - 25500,00грн
+                        </div>
+                    </div>
+                    <div class="availability">
+                        <div class="availability__block availability__block-table availability__block-reserve">
+                            <i class="fas fa-window-close icon"></i>Киев/Заказ - 25000,00грн./ логистика 500,00грн. / ВСЕГО - 25500,00грн
+                        </div>
+                    </div>
+                    <div class="availability">
+                        <div class="availability__block availability__block-table availability__block-paid">
+                            Киев/Заказ - 25000,00грн./ логистика 500,00грн. / ВСЕГО - 25500,00грн
+                        </div>
+                    </div>
+                    <table class="table table-2">
+                        <tr>
+                            <th class="art">Артикул</th>
+                            <th class="brand">Бренд</th>
+                            <th class="brand">Комментарий</th>
+                            <th>РРЦ</th>
+                            <th>Ваша опт цена</th>
+                            <th>Склад</th>
+                            <th>Колличество</th>
+                            <th>Форма получения</th>
+                            <th>Дата поставки</th>
+                            <th>Стоимость логистики</th>
+                            <th>Сумма</th>
+                            <th>Удалить позицию</th>
+                        </tr>
+                        <tr>
+                            <td>Наименование 01</td>
+                            <td class="brand">Samsung</td>
+                            <td class="brand">Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>Киев</td>
+                            <td><input type="text"></td>
+                            <td>
+                                <select>
+                                    <option>Самовывоз</option>
+                                    <option>НП/Чернигов 33</option>
+                                    <option>Маршрут №5</option>
+                                    <option>НП/Одесса 35</option>
+                                </select>
+                            </td>
+                            <td>15,03</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td><i class="fas fa-window-close"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 02</td>
+                            <td class="brand">Samsung</td>
+                            <td class="brand">Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>Киев</td>
+                            <td><input type="text"></td>
+                            <td>
+                                <select>
+                                    <option>Самовывоз</option>
+                                    <option>НП/Чернигов 33</option>
+                                    <option>Маршрут №5</option>
+                                    <option>НП/Одесса 35</option>
+                                </select>
+                            </td>
+                            <td>15,03</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td><i class="fas fa-window-close"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 03</td>
+                            <td class="brand">Samsung</td>
+                            <td class="brand">Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>Киев</td>
+                            <td><input type="text"></td>
+                            <td>
+                                <select>
+                                    <option>Самовывоз</option>
+                                    <option>НП/Чернигов 33</option>
+                                    <option>Маршрут №5</option>
+                                    <option>НП/Одесса 35</option>
+                                </select>
+                            </td>
+                            <td>15,03</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td><i class="fas fa-window-close"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 04</td>
+                            <td class="brand">Samsung</td>
+                            <td class="brand">Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>Киев</td>
+                            <td><input type="text"></td>
+                            <td>
+                                <select>
+                                    <option>Самовывоз</option>
+                                    <option>НП/Чернигов 33</option>
+                                    <option>Маршрут №5</option>
+                                    <option>НП/Одесса 35</option>
+                                </select>
+                            </td>
+                            <td>15,03</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td><i class="fas fa-window-close"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 05</td>
+                            <td class="brand">Samsung</td>
+                            <td class="brand">Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>Киев</td>
+                            <td><input type="text"></td>
+                            <td>
+                                <select>
+                                    <option>Самовывоз</option>
+                                    <option>НП/Чернигов 33</option>
+                                    <option>Маршрут №5</option>
+                                    <option>НП/Одесса 35</option>
+                                </select>
+                            </td>
+                            <td>15,03</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td><i class="fas fa-window-close"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Наименование 06</td>
+                            <td class="brand">Samsung</td>
+                            <td class="brand">Акция</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td>Киев</td>
+                            <td><input type="text"></td>
+                            <td>
+                                <select>
+                                    <option>Самовывоз</option>
+                                    <option>НП/Чернигов 33</option>
+                                    <option>Маршрут №5</option>
+                                    <option>НП/Одесса 35</option>
+                                </select>
+                            </td>
+                            <td>15,03</td>
+                            <td>0,00</td>
+                            <td>0,00</td>
+                            <td><i class="fas fa-window-close"></i></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <aside class="main__right">
+                <div class="icon-close-1">
+                    <i class="far fa-times-circle icon-1"></i>
+                </div>
+                <div class="main__right-cabinet main__left-cabinet">
+                    <div class="title title-cabinet title-cabinet__exit"><a href="#">Выйти</a></div>
+                    <div class="cabinet-block cabinet-block-right">
+                        <p>Контрагент</p>
+                        <p>ФОП Иванов Иван Иванович</p>
+                        <p>Сидоров Иванов</p>
+                    </div>
+                </div>
+                <div class="main__right-time">
+                    <div class="title-time">Закрытие заказов через:</div>
+                    <div class="time">
+                        <p>6ч:</p>
+                        <p>25мин:</p>
+                        <p>45с</p>
+                    </div>
+                </div>
+                <form class="reserve" action="/action_page.php">
+                    <label for="reserve1">Всего в работе:
+                        <input type="text" name="reserve1">
+                    </label>
+                    <label for="reserve2">Всего в жестком:
+                        <input type="text" name="reserve2">
+                    </label>
+                    <button class="btn btn-reserve" type="submit">Перевести в резерв</button>
+                </form>
+                <form class="limit reserve" action="/action_page.php">
+                    <label for="limit1">Кред. лимит:
+                        <input type="text" name="limit1">
+                    </label>
+                    <label for="limit2">Остаток лимит:
+                        <input type="text" name="limit2">
+                    </label>
+                    <button class="btn btn-limit" type="submit">Обновить кредитный лимит</button>
+                </form>
+                <form class="confirm reserve" action="/action_page.php">
+                    <button class="btn btn-confirm" type="submit">Подтвердить заказ(оплатить)</button>
+                </form>
+                <div class="wrap-availability">
+                    <p>В работе</p>
+                    <div class="availability">
+                        <div class="availability__block">
+                            <div class="availability__container">
+                                <i class="fas fa-window-close icon"></i>Киев/25000,00
+                                <!--<input type="text">-->
+                            </div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="availability">
+                        <div class="availability__block">
+                            <div class="availability__container">
+                                <i class="fas fa-window-close icon"></i>Харьков/25000,00
+                                <!--<input type="text">-->
+                            </div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-availability">
+                    <p>В резерве</p>
+                    <div class="availability">
+                        <div class="availability__block availability__block-reserve">
+                            <div class="availability__container">
+                                <i class="fas fa-window-close icon"></i>Киев/Самовывоз/25000,00
+                                <!--<input type="text">-->
+                            </div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="availability">
+                        <div class="availability__block availability__block-reserve">
+                            <div class="availability__container">
+                                <i class="fas fa-window-close icon"></i>Харьков/Самовывоз/25000,00
+                                <!--<input type="text">-->
+                            </div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-availability">
+                    <p>Оплаченный товар</p>
+                    <div class="availability">
+                        <div class="availability__block availability__block-paid">
+                            <div class="availability__container">
+                                Киев/Самовывоз/25000,00
+                                <!--<input type="text">-->
+                            </div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="availability">
+                        <div class="availability__block availability__block-paid">
+                            <div class="availability__container">
+                                Харьков/Самовывоз/25000,00
+                                <!--<input type="text">-->
+                            </div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

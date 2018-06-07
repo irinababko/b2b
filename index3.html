@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header-mob">
+    <div class="wrap_mob">
+        <a class="icon-menu icon-menu-2" href="index.html"><i class="fas fa-home icon"></i></a>
+        <a class="icon-menu icon-menu-3" href="#"><i class="fas fa-sign-in-alt icon"></i></a>
+        <a class="icon-menu-1" href="#"><i class="fas fa-info-circle icon-1"></i></a>
+        <a class="icon-menu icon-menu-4" href="index1.html"><i class="fas fa-shopping-cart icon"></i></a>
+        <a class="icon-menu icon-menu-4" href="index2.html"><i class="fas fa-history icon"></i></a>
+        <a class="icon-menu icon-menu-4" href="index3.html"><i class="fas fa-cog icon active"></i></a>
+        <a class="icon-menu icon-menu-4" href="index4.html"><i class="fas fa-comments icon"></i></a>
+        <a class="icon-menu icon-menu-4" href="index5.html"><i class="fas fa-shipping-fast icon"></i></a>
+    </div>
+
+    <a class="icon-menu icon-menu-4" href="#"><i class="fas fa-power-off icon"></i></a>
+</div>
+<div class="main">
+    <aside class="main__left">
+        <div class="icon-close">
+            <i class="far fa-times-circle icon"></i>
+        </div>
+        <div class="main__left-cabinet">
+            <div class="title title-cabinet">Мой кабинет</div>
+            <div class="cabinet-block">
+                <p>Ведущий менеджер</p>
+                <p>Козленко Олег</p>
+                <p>38 099 000 00 00</p>
+            </div>
+        </div>
+        <div class="main__left-order">
+            <div class="title title-order"><a href="index1-1.html">заказы</a></div>
+            <div class="order-block">
+                <ul>
+                    <li class="title title-block"><a href="index1.html"> История заказов <i class="fas fa-caret-right"></i></a></li>
+                    <li class="title title-block"><a href="index2.html"> Регистрационные данные <i class="fas fa-caret-right"></i></a></li>
+                    <li class="title title-block active"><a href="index3.html"> Настройка интерфейса <i class="fas fa-caret-right"></i></a></li>
+                    <li class="title title-block"><a href="index4.html"> Обратная связь <i class="fas fa-caret-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <div class="main__table">
+        <div class="main__table-head">
+            <div class="slider-img">
+                <p class="slider-title">B2B portal</p>
+            </div>
+            <form class="search" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Обнулить поиск</button>
+            </form>
+        </div>
+        <div class="main__table-center main__left-order">
+            <div class="order-block">
+                <h2>Настройки каталога</h2>
+            <ul class="option">
+                <li class="title title-action title-action__interface">Наименование
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="title title-action title-action__interface">Бренд
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="title title-action title-action__interface">Категория
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="title title-action title-action__interface">Под заказ
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="title title-action title-action__interface">Артикул
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="title title-action title-action__interface">Комментарий
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="title title-action title-action__interface">РРЦ
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="title title-action title-action__interface">Ваша цена
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <aside class="main__right">
+        <div class="icon-close-1">
+            <i class="far fa-times-circle icon-1"></i>
+        </div>
+        <div class="main__right-cabinet main__left-cabinet">
+            <div class="title title-cabinet title-cabinet__exit"><a href="#">Выйти</a></div>
+            <div class="cabinet-block cabinet-block-right">
+                <p>Контрагент</p>
+                <p>ФОП Иванов Иван Иванович</p>
+                <p>Сидоров Иванов</p>
+            </div>
+        </div>
+        <div class="main__right-time">
+            <div class="title-time">Закрытие заказов через:</div>
+            <div class="time">
+                <p>6ч:</p>
+                <p>25мин:</p>
+                <p>45с</p>
+            </div>
+        </div>
+        <form class="reserve" action="/action_page.php">
+            <label for="reserve1">Всего в работе:
+                <input type="text" name="reserve1">
+            </label>
+            <label for="reserve2">Всего в жестком:
+                <input type="text" name="reserve2">
+            </label>
+            <button class="btn btn-reserve" type="submit">Перевести в резерв</button>
+        </form>
+        <form class="limit reserve" action="/action_page.php">
+            <label for="limit1">Кред. лимит:
+                <input type="text" name="limit1">
+            </label>
+            <label for="limit2">Остаток лимит:
+                <input type="text" name="limit2">
+            </label>
+            <button class="btn btn-limit" type="submit">Обновить кредитный лимит</button>
+        </form>
+        <form class="confirm reserve" action="/action_page.php">
+            <button class="btn btn-confirm" type="submit">Подтвердить заказ(оплатить)</button>
+        </form>
+        <div class="wrap-availability">
+            <p>В работе</p>
+            <div class="availability">
+                <div class="availability__block">
+                    <div class="availability__container">
+                        <i class="fas fa-window-close icon"></i>Киев/25000,00
+                        <!--<input type="text">-->
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="availability">
+                <div class="availability__block">
+                    <div class="availability__container">
+                        <i class="fas fa-window-close icon"></i>Харьков/25000,00
+                        <!--<input type="text">-->
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="wrap-availability">
+            <p>В резерве</p>
+            <div class="availability">
+                <div class="availability__block availability__block-reserve">
+                    <div class="availability__container">
+                        <i class="fas fa-window-close icon"></i>Киев/Самовывоз/25000,00
+                        <!--<input type="text">-->
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="availability">
+                <div class="availability__block availability__block-reserve">
+                    <div class="availability__container">
+                        <i class="fas fa-window-close icon"></i>Харьков/Самовывоз/25000,00
+                        <!--<input type="text">-->
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="wrap-availability">
+            <p>Оплаченный товар</p>
+            <div class="availability">
+                <div class="availability__block availability__block-paid">
+                    <div class="availability__container">
+                        Киев/Самовывоз/25000,00
+                        <!--<input type="text">-->
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="availability">
+                <div class="availability__block availability__block-paid">
+                    <div class="availability__container">
+                        Харьков/Самовывоз/25000,00
+                        <!--<input type="text">-->
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+    </aside>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
