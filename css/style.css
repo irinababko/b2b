@@ -299,7 +299,7 @@ a {
 @media screen and (max-width: 1024px) {
   .main__left {
     position: absolute;
-    width: 94vw;
+    width: 93vw;
     height: 100vh;
     left: -100vw;
     top: 0;
@@ -724,7 +724,7 @@ a {
 @media screen and (max-width: 1024px) {
   .main__right {
     position: absolute;
-    width: 94vw;
+    width: 93vw;
     height: 100vh;
     left: -100vw;
     margin: 0;
