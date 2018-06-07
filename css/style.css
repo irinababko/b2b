@@ -138,7 +138,9 @@ a {
   transition: .35s;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
-
+.icon-menu-1 .icon-1.icon-1_right{
+ transform: rotate(180deg);
+}
 .icon-menu-1 .icon-1:hover {
   color: #5fd1b4;
 }
