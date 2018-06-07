@@ -176,7 +176,7 @@ a {
   padding: 5px;
   position: absolute;
   top: -51px;
-  right: 20px;
+  right: 70px;
   background-color: transparent;
   color: white;
 }
@@ -206,7 +206,7 @@ a {
   padding: 5px;
   position: absolute;
   top: -51px;
-  right: 20px;
+  right: 70px;
   background-color: transparent;
   color: white;
 }
@@ -299,7 +299,7 @@ a {
 @media screen and (max-width: 1024px) {
   .main__left {
     position: absolute;
-    width: 93vw;
+    width: 92vw;
     height: 100vh;
     left: -100vw;
     top: 0;
@@ -724,7 +724,7 @@ a {
 @media screen and (max-width: 1024px) {
   .main__right {
     position: absolute;
-    width: 93vw;
+    width: 92vw;
     height: 100vh;
     left: -100vw;
     margin: 0;
