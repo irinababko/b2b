@@ -62,7 +62,7 @@ var left = function() {
 
     $('.icon-menu').click(function() {
         $('.main__left').animate({
-            left: '7vw'
+            left: '11vw'
         }, 200);
         // $('.icon-menu .icon').addClass('icon-active');
     });
@@ -81,7 +81,7 @@ var left = function() {
 var right = function () {
     $('.icon-menu-1').click(function() {
         $('.main__right').animate({
-            left: '7vw'
+            left: '11vw'
         }, 200);
         // $('.main__right').animate({
         //     width: 'toggle'
