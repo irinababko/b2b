@@ -11176,14 +11176,14 @@ label {
 
 .main__left-order .order-block .option {
   padding-top: 0px;
-  line-height: 2.5;
+  line-height: 1;
   font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
   .main__left-order .order-block .option {
-    line-height: 1;
-    font-size: 24px;
+    line-height: 1.5;
+    font-size: 30px;
     margin-left: 25px;
   }
 }
