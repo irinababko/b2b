@@ -10922,6 +10922,12 @@ label {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .main .title-block-2 {
+    font-size: 26px;
+  }
+}
+
 .main .title-block-2:hover {
   background-color: #cccccc;
 }
@@ -10970,6 +10976,13 @@ label {
 }
 
 @media screen and (max-width: 768px) {
+  .main #btn-order {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .main .btn-cabinet {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -11007,10 +11020,23 @@ label {
   padding: 10px 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .main__left-cabinet .cabinet-block {
+    font-size: 30px;
+    height: 100px;
+  }
+}
+
 .main__left-cabinet .cabinet-block p {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__left-cabinet .cabinet-block p {
+    font-size: 30px;
+  }
 }
 
 .main__left-cabinet a {
@@ -11256,6 +11282,7 @@ label {
 
 .main__left-filter p {
   margin: 5px 0 20px;
+  font-size: 30px;
 }
 
 .main__left-filter .container-filter {
