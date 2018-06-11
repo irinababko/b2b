@@ -10799,6 +10799,13 @@ label {
   transition: .5s;
 }
 
+@media screen and (max-width: 768px) {
+  .main .title-cabinet {
+    padding: 20px 10px;
+    border-radius: 0px;
+  }
+}
+
 .main .title-cabinet__exit {
   text-align: left;
 }
