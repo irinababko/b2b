@@ -88,60 +88,276 @@
             <i class="far fa-times-circle icon-1"></i>
         </div>
         <div class="main__right-cabinet main__left-cabinet">
-            <div class="title title-cabinet title-cabinet__exit btn-cabinet"><a href="#">Выйти</a></div>
+            <div class="title title-cabinet title-cabinet__exit btn-cabinet"><a href="{{ route('logout') }}"
+                                                                                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Выйти из системы</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </div>
             <div class="cabinet-block cabinet-block-right">
                 <p>Контрагент</p>
-                <p>ФОП Иванов Иван Иванович</p>
-                <p>Сидоров Иванов</p>
+                {{--<p>ФОП Иванов Иван Иванович</p>--}}
+                <p>{{$user->Name . ' ' . $user->MiddleName  . ' '. $user->Surname}}</p>
+                {{--<p>Сидоров Иванов</p>--}}
             </div>
         </div>
         <div class="main__right-time">
-            <div class="title-time">Закрытие заказов через:</div>
+            <div class="title-time">закрытие заказов через:</div>
             <div class="time">
-                <p>6ч:</p>
-                <p>25мин:</p>
-                <p>45с</p>
+                <p>6час.</p>
+                <p>25мин.</p>
+                <p>45сек.</p>
             </div>
         </div>
-        <form class="reserve" action="/action_page.php">
-            <label for="reserve1">Всего в работе:
-                <input type="text" name="reserve1">
-            </label>
-            <label for="reserve2">Всего в жестком:
-                <input type="text" name="reserve2">
-            </label>
-            <button class="btn btn-reserve" type="submit">Перевести в резерв</button>
-        </form>
-        <form class="limit reserve" action="/action_page.php">
-            <label for="limit1">Кред. лимит:
-                <input type="text" name="limit1">
-            </label>
-            <label for="limit2">Остаток лимит:
-                <input type="text" name="limit2">
-            </label>
-            <button class="btn btn-limit" type="submit">Обновить кредитный лимит</button>
-        </form>
-        <form class="confirm reserve" action="/action_page.php">
-            <button class="btn btn-confirm" type="submit">Подтвердить заказ(оплатить)</button>
-        </form>
+        <div class="wrap-reserve">
+            <form class="reserve" action="/action_page.php">
+                <label for="reserve1">в работе:
+                    <input type="text" name="reserve1">
+                </label>
+                <label for="reserve2">в резерве:
+                    <input type="text" name="reserve2">
+                </label>
+
+                <button type="button" class="btn btn-reserve btn-modal-2" id="btn-2"
+                        onclick="document.getElementById('modal-2').style.display='flex'">перевести в резерв
+                </button>
+
+                <div class="product modal" id="modal-2">
+                    <div class="modal-content2">
+                        <div class="imgcontainer">
+                            {{--<span onclick="document.getElementById('modal-2').style.display='none'" class="close close-2"--}}
+                                      {{--id="close-2" title="Close Modal"><i class="far fa-times-circle"></i></span>--}}
+
+                            <div class="main__table main__table-center main__table-service">
+                                <div class="availability">
+                                    <div class="availability__block availability__block-table availability__block-reserve">
+                                    <span>
+                                        <span class="total">киев / всего - 25500,00</span>
+                                        <span class="logistics"> / логистика 500,00</span>
+                                        <span class="order-total"> / заказ - 25000,00</span>
+                                    </span>
+                                        <span onclick="document.getElementById('modal-2').style.display='none'" class="close close-2"
+                                              id="close-2" title="Close Modal"><i class="fas fa-times icon"></i>
+                                    </div>
+                                </div>
+                                <table class="table table-2">
+                                    <tr>
+                                        <th class="art"><div class="th-title">Артикул</div></th>
+                                        <th class="brand"><div class="th-title">Бренд</div></th>
+                                        <th><div class="th-title">Cтатус</div></th>
+                                        <th><div class="th-title">РРЦ</div></th>
+                                        <th><div class="th-title">Ваша цена</div></th>
+                                        <th><div class="th-title">Кол-во</div></th>
+                                        <th><div class="th-title">Формат получения</div></th>
+                                        <th><div class="th-title">Доступ</div></th>
+                                        <th><div class="th-title">Логистика</div></th>
+                                        <th><div class="th-title">Сумма</div></th>
+                                        <th><div class="th-title">Уд.</div></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Наименование 01</td>
+                                        <td class="brand">Samsung</td>
+                                        <td class="brand">Недостаточно товара</td>
+                                        <td>0,00</td>
+                                        <td>Киев</td>
+                                        <td><input type="text"></td>
+                                        <td>
+                                            <select>
+                                                <option>Самовывоз</option>
+                                                <option>НП/Чернигов 33</option>
+                                                <option>Маршрут №5</option>
+                                                <option>НП/Одесса 35</option>
+                                            </select>
+                                        </td>
+                                        <td>15,03</td>
+                                        <td>0,00</td>
+                                        <td>0,00</td>
+                                        <td><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наименование 02</td>
+                                        <td class="brand">Samsung</td>
+                                        <td class="brand"></td>
+                                        <td>0,00</td>
+                                        <td>Киев</td>
+                                        <td><input type="text"></td>
+                                        <td>
+                                            <select>
+                                                <option>Самовывоз</option>
+                                                <option>НП/Чернигов 33</option>
+                                                <option>Маршрут №5</option>
+                                                <option>НП/Одесса 35</option>
+                                            </select>
+                                        </td>
+                                        <td>15,03</td>
+                                        <td>0,00</td>
+                                        <td>0,00</td>
+                                        <td><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наименование 03</td>
+                                        <td class="brand">Samsung</td>
+                                        <td class="brand"></td>
+                                        <td>0,00</td>
+                                        <td>Киев</td>
+                                        <td><input type="text"></td>
+                                        <td>
+                                            <select>
+                                                <option>Самовывоз</option>
+                                                <option>НП/Чернигов 33</option>
+                                                <option>Маршрут №5</option>
+                                                <option>НП/Одесса 35</option>
+                                            </select>
+                                        </td>
+                                        <td>15,03</td>
+                                        <td>0,00</td>
+                                        <td>0,00</td>
+                                        <td><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наименование 04</td>
+                                        <td class="brand">Samsung</td>
+                                        <td class="brand">Недостаточно товара</td>
+                                        <td>0,00</td>
+                                        <td>Киев</td>
+                                        <td><input type="text"></td>
+                                        <td>
+                                            <select>
+                                                <option>Самовывоз</option>
+                                                <option>НП/Чернигов 33</option>
+                                                <option>Маршрут №5</option>
+                                                <option>НП/Одесса 35</option>
+                                            </select>
+                                        </td>
+                                        <td>15,03</td>
+                                        <td>0,00</td>
+                                        <td>0,00</td>
+                                        <td><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наименование 05</td>
+                                        <td class="brand">Samsung</td>
+                                        <td class="brand"></td>
+                                        <td>0,00</td>
+                                        <td>Киев</td>
+                                        <td><input type="text"></td>
+                                        <td>
+                                            <select>
+                                                <option>Самовывоз</option>
+                                                <option>НП/Чернигов 33</option>
+                                                <option>Маршрут №5</option>
+                                                <option>НП/Одесса 35</option>
+                                            </select>
+                                        </td>
+                                        <td>15,03</td>
+                                        <td>0,00</td>
+                                        <td>0,00</td>
+                                        <td><i class="fas fa-times"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наименование 06</td>
+                                        <td class="brand">Samsung</td>
+                                        <td class="brand"></td>
+                                        <td>0,00</td>
+                                        <td>Киев</td>
+                                        <td><input type="text"></td>
+                                        <td>
+                                            <select>
+                                                <option>Самовывоз</option>
+                                                <option>НП/Чернигов 33</option>
+                                                <option>Маршрут №5</option>
+                                                <option>НП/Одесса 35</option>
+                                            </select>
+                                        </td>
+                                        <td>15,03</td>
+                                        <td>0,00</td>
+                                        <td>0,00</td>
+                                        <td><i class="fas fa-times"></i></td>
+                                    </tr>
+
+                                </table>
+                                <input type="text" class="notice">
+                                <button type="button" class="btn btn-reserve btn-reserve-2 btn-modal-2" id="btn-2">перевести в резерв</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                {{--<button class="btn btn-reserve" type="submit">перевести в резерв</button>--}}
+            </form>
+            <form class="limit reserve" action="/action_page.php">
+                <label for="limit1">кред. лим.:
+                    <input type="text" name="limit1">
+                </label>
+                <label for="limit2">остаток:
+                    <input type="text" name="limit2">
+                </label>
+                <button class="btn btn-limit" type="submit">обновить кред. лим.</button>
+            </form>
+        </div>
+        <div class="wrap-reserve">
+            <form class="confirm reserve" action="/action_page.php">
+                <button class="btn btn-confirm" type="submit">оплатить заказ</button>
+            </form>
+        </div>
         <div class="wrap-availability">
             <p>В работе</p>
             <div class="availability">
                 <div class="availability__block">
-                    <div class="availability__container">
-                        <i class="fas fa-window-close icon"></i>Киев/25000,00
+                    {{--<i class="fas fa-times icon"></i>--}}
+                    <div class="availability__container availability__container-work">
+                        <i class="fas fa-times icon"></i>
+                        <span>Киев/
+                        <div class="stock">НП,адрессная,Затоооооооока,бокс№16</div>
+                        /25000,00
+                    </span>
                         <!--<input type="text">-->
+                        {{--<input type="checkbox" checked="checked">--}}
                     </div>
-                    <input type="text">
+                    <input type="checkbox" checked="checked">
+                    {{--<span class="checkmark"></span>--}}
                 </div>
             </div>
             <div class="availability">
                 <div class="availability__block">
-                    <div class="availability__container">
-                        <i class="fas fa-window-close icon"></i>Харьков/25000,00
-                        <!--<input type="text">-->
+                    <div class="availability__container availability__container-work">
+                        <i class="fas fa-times icon"></i>
+                        <span>Одесса/
+                        <div class="stock">НП,адрессная,Затооооока,бокс№16</div>
+                        /25000,00
+                    </span>
                     </div>
-                    <input type="text">
+                    <input type="checkbox" checked="checked">
+                    {{--<span class="checkmark"></span>--}}
+                </div>
+            </div>
+            <div class="availability">
+                <div class="availability__block">
+                    <div class="availability__container availability__container-work">
+                        <i class="fas fa-times icon"></i>
+                        <span>Харьков/
+                        <div class="stock">НП,адрессная,Затооока,бокс№16</div>
+                        /25000,00
+                    </span>
+                    </div>
+                    <input type="checkbox" checked="checked">
+                    {{--<span class="checkmark"></span>--}}
+                </div>
+            </div>
+            <div class="availability">
+                <div class="availability__block">
+                    <div class="availability__container availability__container-work">
+                        <i class="fas fa-times icon"></i>
+                        <span>Львов/
+                        <div class="stock">НП,адрессная,Затока,бокс№16</div>
+                        /25000,00
+                    </span>
+                    </div>
+                    <input type="checkbox" checked="checked">
+                    {{--<span class="checkmark"></span>--}}
                 </div>
             </div>
         </div>
@@ -149,46 +365,91 @@
             <p>В резерве</p>
             <div class="availability">
                 <div class="availability__block availability__block-reserve">
-                    <div class="availability__container">
-                        <i class="fas fa-window-close icon"></i>Киев/Самовывоз/25000,00
+                    <div class="availability__container availability__container-reserve">
+                        <i class="fas fa-times icon"></i>
+                        <span>Киев/
+                        <div class="stock">Самовывоз</div>
+                        /25000,00
+                    </span>
+
                         <!--<input type="text">-->
+                        {{--<span class="checkmark"></span>--}}
                     </div>
-                    <input type="text">
+                    <input type="checkbox" checked="checked">
                 </div>
             </div>
             <div class="availability">
                 <div class="availability__block availability__block-reserve">
-                    <div class="availability__container">
-                        <i class="fas fa-window-close icon"></i>Харьков/Самовывоз/25000,00
+                    <div class="availability__container availability__container-reserve">
+                        <i class="fas fa-times icon"></i>
+                        <span>Одесса/
+                        <div class="stock">Самовывоз</div>
+                        /25000,00
+                    </span>
                         <!--<input type="text">-->
+                        {{--<span class="checkmark"></span>--}}
                     </div>
-                    <input type="text">
+                    <input type="checkbox" checked="checked">
+                </div>
+            </div>
+            <div class="availability">
+                <div class="availability__block availability__block-reserve">
+                    <div class="availability__container availability__container-reserve">
+                        <i class="fas fa-times icon"></i>
+                        <span>Харьков/
+                        <div class="stock">Самовывоз</div>
+                        /25000,00
+                    </span>
+                        <!--<input type="text">-->
+                        {{--<span class="checkmark"></span>--}}
+                    </div>
+                    <input type="checkbox" checked="checked">
+                </div>
+            </div>
+            <div class="availability">
+                <div class="availability__block availability__block-reserve">
+                    <div class="availability__container availability__container-reserve">
+                        <i class="fas fa-times icon"></i>
+                        <span>Львов/
+                        <div class="stock">Самовывоз</div>
+                        /25000,00
+                    </span>
+                        <!--<input type="text">-->
+                        {{--<span class="checkmark"></span>--}}
+                    </div>
+                    <input type="checkbox" checked="checked">
                 </div>
             </div>
         </div>
         <div class="wrap-availability">
-            <p>Оплаченный товар</p>
+            <p>Оплачено</p>
             <div class="availability">
                 <div class="availability__block availability__block-paid">
-                    <div class="availability__container">
-                        Киев/Самовывоз/25000,00
+                    <div class="availability__container availability__container-paid">
+                    <span>Киев/
+                        <div class="stock">Самовывоз</div>
+                        /25000,00
+                    </span>
                         <!--<input type="text">-->
                     </div>
-                    <input type="text">
                 </div>
             </div>
             <div class="availability">
                 <div class="availability__block availability__block-paid">
-                    <div class="availability__container">
-                        Харьков/Самовывоз/25000,00
+                    <div class="availability__container availability__container-paid">
+                    <span>Львов/
+                        <div class="stock">Самовывоз</div>
+                        /25000,00
+                    </span>
                         <!--<input type="text">-->
                     </div>
-                    <input type="text">
                 </div>
             </div>
         </div>
 
     </aside>
+
+
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="main.js"></script>
