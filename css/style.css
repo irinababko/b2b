@@ -11023,7 +11023,7 @@ label {
 @media screen and (max-width: 768px) {
   .main__left-cabinet .cabinet-block {
     font-size: 30px;
-    height: 100px;
+    height: auto;
   }
 }
 
