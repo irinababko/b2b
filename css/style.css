@@ -11966,11 +11966,23 @@ label {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .main__right-time .title-time {
+    font-size: 28px;
+  }
+}
+
 .main__right-time .time {
   width: 100%;
   color: red;
   font-size: 22px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main__right-time .time {
+    font-size: 32px;
+  }
 }
 
 .main__right-time .time p {
@@ -12034,6 +12046,12 @@ label {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .main__right .btn {
+    padding: 10px;
+  }
+}
+
 .main__right .btn:hover {
   opacity: 0.8;
 }
@@ -12094,6 +12112,12 @@ label {
   margin: 0 10px;
   padding: 0 10px;
   height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .main .availability__block {
+    padding: 20px;
+  }
 }
 
 .main .availability__block-table {
@@ -12241,6 +12265,12 @@ label {
 .main .availability__container .icon {
   padding-right: 8px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .main .availability__container .icon {
+    padding-right: 20px;
+  }
 }
 
 .main .wrap-work {
