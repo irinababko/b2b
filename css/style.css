@@ -11323,6 +11323,7 @@ label {
   background-color: #53e3a6;
   background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #50a3a2), to(#53e3a6));
   background-image: linear-gradient(to bottom right, #50a3a2 0, #53e3a6 100%);
+  margin-top: 8px;
 }
 
 .main__table-head .slider-img .slider-title {
@@ -11335,7 +11336,7 @@ label {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  margin: 0;
+  margin: 0px;
   text-shadow: 0.02em 0.02em 0.02em rgba(0, 0, 0, 0.08);
   -webkit-filter: drop-shadow(0.045em 0.045em 0.04em rgba(0, 0, 0, 0.21));
   filter: drop-shadow(0.045em 0.045em 0.04em rgba(0, 0, 0, 0.21));
@@ -11345,6 +11346,7 @@ label {
   .main__table-head .slider-img {
     height: 85px;
     line-height: 85;
+    margin: 0;
   }
 }
 
@@ -11595,6 +11597,10 @@ label {
   text-align: center;
 }
 
+.main__table-center .registr td.registr-icon:hover {
+  background-color: transparent;
+}
+
 .main__table-center .registr tr {
   border-bottom: none;
 }
@@ -11661,6 +11667,15 @@ label {
   outline: none;
 }
 
+@media screen and (max-width: 768px) {
+  .main__table-center form input,
+  .main__table-center form textarea {
+    margin: 10px auto;
+    max-width: 600px;
+    font-size: 24px;
+  }
+}
+
 .main__table-center form textarea {
   resize: none;
 }
@@ -11676,6 +11691,18 @@ label {
   width: 150px;
   text-transform: uppercase;
   color: grey;
+}
+
+@media screen and (max-width: 768px) {
+  .main__table-center form input[type="submit"] {
+    width: 100%;
+    background-color: #53e3a6;
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #50a3a2), to(#53e3a6));
+    background-image: linear-gradient(to bottom right, #50a3a2 0, #53e3a6 100%);
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
 }
 
 .main__table-center form input[type="submit"]:hover {
