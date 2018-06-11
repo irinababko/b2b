@@ -471,18 +471,14 @@
                     <i class="far fa-times-circle icon-1"></i>
                 </div>
                 <div class="main__right-cabinet main__left-cabinet">
-                    <div class="title title-cabinet title-cabinet__exit btn-cabinet"><a href="{{ route('logout') }}"
-                                                                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">Выйти из системы</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
+                    <div class="title title-cabinet title-cabinet__exit btn-cabinet"><a href="#">Выйти из системы</a>
+
                     </div>
                     <div class="cabinet-block cabinet-block-right">
                         <p>Контрагент</p>
-                        {{--<p>ФОП Иванов Иван Иванович</p>--}}
-                        <p>{{$user->Name . ' ' . $user->MiddleName  . ' '. $user->Surname}}</p>
-                        {{--<p>Сидоров Иванов</p>--}}
+                        <p>ФОП Иванов Иван Иванович</p>
+                        <p></p>
+                        <p>Сидоров Иванов</p>
                     </div>
                 </div>
                 <div class="main__right-time">
@@ -502,15 +498,13 @@
                             <input type="text" name="reserve2">
                         </label>
 
-                        <button type="button" class="btn btn-reserve btn-modal-2" id="btn-2"
-                                onclick="document.getElementById('modal-2').style.display='flex'">перевести в резерв
+                        <button type="button" class="btn btn-reserve btn-modal-2" id="btn-2" onclick="document.getElementById('modal-2').style.display='flex'">перевести в резерв
                         </button>
 
                         <div class="product modal" id="modal-2">
                             <div class="modal-content2">
                                 <div class="imgcontainer">
-                                    {{--<span onclick="document.getElementById('modal-2').style.display='none'" class="close close-2"--}}
-                                              {{--id="close-2" title="Close Modal"><i class="far fa-times-circle"></i></span>--}}
+                                    <span onclick="document.getElementById('modal-2').style.display='none'" class="close close-2" id="close-2" title="Close Modal"><i class="far fa-times-circle"></i></span>
 
                                     <div class="main__table main__table-center main__table-service">
                                         <div class="availability">
@@ -520,8 +514,7 @@
                                         <span class="logistics"> / логистика 500,00</span>
                                         <span class="order-total"> / заказ - 25000,00</span>
                                     </span>
-                                                <span onclick="document.getElementById('modal-2').style.display='none'" class="close close-2"
-                                                      id="close-2" title="Close Modal"><i class="fas fa-times icon"></i>
+                                                <span onclick="document.getElementById('modal-2').style.display='none'" class="close close-2" id="close-2" title="Close Modal"><i class="fas fa-times icon"></i></span>
                                             </div>
                                         </div>
                                         <table class="table table-2">
@@ -668,8 +661,7 @@
                             </div>
                         </div>
 
-
-                        {{--<button class="btn btn-reserve" type="submit">перевести в резерв</button>--}}
+                        <button class="btn btn-reserve" type="submit">перевести в резерв</button>
                     </form>
                     <form class="limit reserve" action="/action_page.php">
                         <label for="limit1">кред. лим.:
@@ -690,18 +682,17 @@
                     <p>В работе</p>
                     <div class="availability">
                         <div class="availability__block">
-                            {{--<i class="fas fa-times icon"></i>--}}
+                            <i class="fas fa-times icon"></i>
                             <div class="availability__container availability__container-work">
-                                <i class="fas fa-times icon"></i>
+
                                 <span>Киев/
                         <div class="stock">НП,адрессная,Затоооооооока,бокс№16</div>
                         /25000,00
                     </span>
-                                <!--<input type="text">-->
-                                {{--<input type="checkbox" checked="checked">--}}
+                                <input type="checkbox" checked="checked">
                             </div>
                             <input type="checkbox" checked="checked">
-                            {{--<span class="checkmark"></span>--}}
+                            <span class="checkmark"></span>
                         </div>
                     </div>
                     <div class="availability">
@@ -714,7 +705,7 @@
                     </span>
                             </div>
                             <input type="checkbox" checked="checked">
-                            {{--<span class="checkmark"></span>--}}
+                            <span class="checkmark"></span>
                         </div>
                     </div>
                     <div class="availability">
@@ -727,7 +718,7 @@
                     </span>
                             </div>
                             <input type="checkbox" checked="checked">
-                            {{--<span class="checkmark"></span>--}}
+                            <span class="checkmark"></span>
                         </div>
                     </div>
                     <div class="availability">
@@ -740,7 +731,7 @@
                     </span>
                             </div>
                             <input type="checkbox" checked="checked">
-                            {{--<span class="checkmark"></span>--}}
+                            <span class="checkmark"></span>
                         </div>
                     </div>
                 </div>
@@ -755,8 +746,7 @@
                         /25000,00
                     </span>
 
-                                <!--<input type="text">-->
-                                {{--<span class="checkmark"></span>--}}
+                                <span class="checkmark"></span>
                             </div>
                             <input type="checkbox" checked="checked">
                         </div>
@@ -769,8 +759,7 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                                <!--<input type="text">-->
-                                {{--<span class="checkmark"></span>--}}
+                                <span class="checkmark"></span>
                             </div>
                             <input type="checkbox" checked="checked">
                         </div>
@@ -783,8 +772,7 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                                <!--<input type="text">-->
-                                {{--<span class="checkmark"></span>--}}
+                                <span class="checkmark"></span>
                             </div>
                             <input type="checkbox" checked="checked">
                         </div>
@@ -797,8 +785,7 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                                <!--<input type="text">-->
-                                {{--<span class="checkmark"></span>--}}
+                                <span class="checkmark"></span>
                             </div>
                             <input type="checkbox" checked="checked">
                         </div>
@@ -813,7 +800,6 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                                <!--<input type="text">-->
                             </div>
                         </div>
                     </div>
@@ -824,7 +810,6 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                                <!--<input type="text">-->
                             </div>
                         </div>
                     </div>
