@@ -11069,7 +11069,7 @@ label {
 
 @media screen and (max-width: 768px) {
   .main__left-order .order-block ul li {
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 
@@ -11563,12 +11563,6 @@ label {
 .main__table-center {
   height: auto;
   overflow: scroll;
-}
-
-@media screen and (max-width: 768px) {
-  .main__table-center {
-    padding: 0 0 0 10px;
-  }
 }
 
 .main__table-center .registr {
