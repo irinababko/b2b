@@ -10996,7 +10996,7 @@ label {
 }
 
 .main__left-cabinet .cabinet-block {
-  height: 62px;
+  height: 69px;
   padding: 10px 10px;
 }
 
@@ -11487,12 +11487,6 @@ label {
 }
 
 @media screen and (max-width: 768px) {
-  .main__table table.table {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .main__table table.table-2 .brand {
     display: none;
   }
@@ -11581,7 +11575,7 @@ label {
 
 .main__table-center {
   height: auto;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .main__table-center .registr {
