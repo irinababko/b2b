@@ -40,6 +40,7 @@
         <a class="icon-menu icon-menu-4" href="index2.html"><i class="fas fa-history icon"></i></a>
         <a class="icon-menu icon-menu-4" href="index3.html"><i class="fas fa-cog icon"></i></a>
         <a class="icon-menu icon-menu-4" href="index4.html"><i class="fas fa-comments icon"></i></a>
+        <a class="icon-menu icon-menu-4" href="index5.html"><i class="fas fa-shipping-fast icon"></i></a>
     </div>
 
     <a class="icon-menu icon-menu-4" href="#"><i class="fas fa-sign-out-alt icon"></i></a>
@@ -67,6 +68,7 @@
                     <li class="title title-block"><a href="index2.html"> Регистрационные данные <i class="fas fa-caret-right"></i></a></li>
                     <li class="title title-block"><a href="index3.html"> Настройка интерфейса <i class="fas fa-caret-right"></i></a></li>
                     <li class="title title-block"><a href="index4.html"> Обратная связь <i class="fas fa-caret-right"></i></a></li>
+                    <li class="title title-block"><a href="index5.html"> Конфигурация огрузки <i class="fas fa-caret-right"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -88,18 +90,15 @@
             <i class="far fa-times-circle icon-1"></i>
         </div>
         <div class="main__right-cabinet main__left-cabinet">
-            <div class="title title-cabinet title-cabinet__exit btn-cabinet"><a href="{{ route('logout') }}"
-                                                                                onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">Выйти из системы</a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
+            <div class="title title-cabinet title-cabinet__exit btn-cabinet"><a href="#">Выйти из системы</a>
+                <form id="logout-form"  method="POST" style="display: none;">
                 </form>
             </div>
             <div class="cabinet-block cabinet-block-right">
                 <p>Контрагент</p>
-                {{--<p>ФОП Иванов Иван Иванович</p>--}}
-                <p>{{$user->Name . ' ' . $user->MiddleName  . ' '. $user->Surname}}</p>
-                {{--<p>Сидоров Иванов</p>--}}
+                <p>ФОП Иванов Иван Иванович</p>
+                <p></p>
+                <p>Сидоров Иванов</p>
             </div>
         </div>
         <div class="main__right-time">
@@ -286,7 +285,7 @@
                 </div>
 
 
-                {{--<button class="btn btn-reserve" type="submit">перевести в резерв</button>--}}
+                <button class="btn btn-reserve" type="submit">перевести в резерв</button>
             </form>
             <form class="limit reserve" action="/action_page.php">
                 <label for="limit1">кред. лим.:
@@ -307,18 +306,17 @@
             <p>В работе</p>
             <div class="availability">
                 <div class="availability__block">
-                    {{--<i class="fas fa-times icon"></i>--}}
+                    <i class="fas fa-times icon"></i>
                     <div class="availability__container availability__container-work">
                         <i class="fas fa-times icon"></i>
                         <span>Киев/
                         <div class="stock">НП,адрессная,Затоооооооока,бокс№16</div>
                         /25000,00
                     </span>
-                        <!--<input type="text">-->
-                        {{--<input type="checkbox" checked="checked">--}}
+                        <input type="checkbox" checked="checked">
                     </div>
                     <input type="checkbox" checked="checked">
-                    {{--<span class="checkmark"></span>--}}
+                    <span class="checkmark"></span>
                 </div>
             </div>
             <div class="availability">
@@ -331,7 +329,7 @@
                     </span>
                     </div>
                     <input type="checkbox" checked="checked">
-                    {{--<span class="checkmark"></span>--}}
+                    <span class="checkmark"></span>
                 </div>
             </div>
             <div class="availability">
@@ -344,7 +342,7 @@
                     </span>
                     </div>
                     <input type="checkbox" checked="checked">
-                    {{--<span class="checkmark"></span>--}}
+                    <span class="checkmark"></span>
                 </div>
             </div>
             <div class="availability">
@@ -371,9 +369,7 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-
-                        <!--<input type="text">-->
-                        {{--<span class="checkmark"></span>--}}
+                        <span class="checkmark"></span>
                     </div>
                     <input type="checkbox" checked="checked">
                 </div>
@@ -386,8 +382,8 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                        <!--<input type="text">-->
-                        {{--<span class="checkmark"></span>--}}
+
+                        <span class="checkmark"></span>
                     </div>
                     <input type="checkbox" checked="checked">
                 </div>
@@ -400,8 +396,7 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                        <!--<input type="text">-->
-                        {{--<span class="checkmark"></span>--}}
+                        <span class="checkmark"></span>
                     </div>
                     <input type="checkbox" checked="checked">
                 </div>
@@ -414,8 +409,8 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                        <!--<input type="text">-->
-                        {{--<span class="checkmark"></span>--}}
+
+                        <span class="checkmark"></span>
                     </div>
                     <input type="checkbox" checked="checked">
                 </div>
@@ -430,7 +425,6 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                        <!--<input type="text">-->
                     </div>
                 </div>
             </div>
@@ -441,7 +435,6 @@
                         <div class="stock">Самовывоз</div>
                         /25000,00
                     </span>
-                        <!--<input type="text">-->
                     </div>
                 </div>
             </div>

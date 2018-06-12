@@ -11904,11 +11904,75 @@ label {
 .main__table-center form .file_upload:active .button {
   background-color: rgba(95, 209, 180, 0.6);
 }
-
+.main__table-center .table.table-shipment{
+  width: 40%;
+  margin: 20px 0 0 30px;
+  line-height: 1.5;
+}
+.main__table-center .table.table-shipment td{
+  text-align: left;
+}
+.main__table-center .table.table-shipment select{
+  width: 75%;
+  padding: 10px;
+  display: block;
+}
+.main__table-center .form-shipment{
+  width: 50%;
+  margin-left: 30px;
+}
+.main__table-center .form-shipment input{
+  margin-right: 0;
+}
+.main__table-center .form-shipment select.select-shipment{
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.main__table-center .form-shipment .wrap-btn-shipment{
+  display: flex;
+  justify-content: space-between;
+}
+.main__table-center .form-shipment input[type=submit]{
+  margin: 10px 0px 10px 0px;
+  /*display: inline-block;*/
+  width: 46%;
+}
+.main__table-center .form-shipment_item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__table-center .form-shipment_item label{
+  min-width: 100px;
+}
 .main__table-bottom {
   min-height: 200px;
 }
-
+@media screen and (max-width: 1200px) {
+  .main__table-center .form-shipment {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main__table-center .form-shipment .wrap-btn-shipment{
+    flex-flow: column;
+  }
+  .main__table-center .form-shipment{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main__table-center .form-shipment select.select-shipment{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .main__table-center .form-shipment input[type=submit]{
+    display: block;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .main__table-bottom {
     padding: 0 0 0 10px;
