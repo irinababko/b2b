@@ -11013,6 +11013,9 @@ label {
     top: 0;
     margin: 0;
   }
+  .main__left-active{
+    left: 10vw;
+  }
 }
 
 .main__left-cabinet .cabinet-block {
@@ -12015,6 +12018,9 @@ label {
     left: -100vw;
     top: 0;
     margin: 0;
+  }
+  .main__right-active{
+    left: 10vw;
   }
 }
 

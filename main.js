@@ -20,44 +20,59 @@
 //     });
 // })
 
+$(document).ready(function () {
+    $('.icon-menu').click(function () {
+        $('.main__left').toggleClass('main__left-active');
+    });
+    $('.icon-close').click(function () {
+        $('.main__left').toggleClass('main__left-active');
+    });
+
+});
+
+$(document).ready(function () {
+    $('.icon-menu-1').click(function () {
+        $('.main__right').toggleClass('main__right-active');
+    });
+    $('.icon-close-1').click(function () {
+        $('.main__right').toggleClass('main__right-active');
+    });
+
+});
+
 var slideIndex = 1;
 $(document).ready(function () {
     var left = function () {
 
-        $('.icon-menu').click(function () {
-            $('.main__left').animate({
-                left: '10vw'
-            }, 200);
-
-        });
-        // $('.icon-menu.icon').click(function () {
-        //     $('.main__left.active-icon').removeClass('active-icon');
-        //     $(this).toggleClass('active-icon');
+        // $('.icon-menu').click(function () {
+        //     $('.main__left').animate({
+        //         left: '10vw'
+        //     }, 200);
         // });
 
-        $('.icon-close').click(function () {
-            $('.main__left').animate({
-                left: '-100vw'
-            }, 200);
-        });
+        // $('.icon-close').click(function () {
+        //     $('.main__left').animate({
+        //         left: '-100vw'
+        //     }, 200);
+        // });
 
     };
     var right = function () {
-        $('.icon-menu-1').click(function () {
-            $('.main__right').animate({
-                left: '10vw'
-            }, 200);
-        });
-
-        $('.icon-close-1').click(function () {
-            $('.main__right').animate({
-                left: '-100vw'
-            }, 200);
-        });
+        // $('.icon-menu-1').click(function () {
+        //     $('.main__right').animate({
+        //         left: '10vw'
+        //     }, 200);
+        // });
+        //
+        // $('.icon-close-1').click(function () {
+        //     $('.main__right').animate({
+        //         left: '-100vw'
+        //     }, 200);
+        // });
     };
 
-    $(document).ready(left);
-    $(document).ready(right);
+    // $(document).ready(left);
+    // $(document).ready(right);
 
 
 
