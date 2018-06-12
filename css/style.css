@@ -11000,9 +11000,9 @@ label {
   transition: 0.8s;
 }
 
-.main__left.active {
-  left: 0vw;
-}
+/*.main__left.active {*/
+  /*left: 0vw;*/
+/*}*/
 
 @media screen and (max-width: 768px) {
   .main__left {
@@ -13005,4 +13005,6 @@ img.hover-shadow:hover {
 .sorting {
   background: none !important;
 }
-
+.main__left.active-icon{
+  left: 10vw;
+}
