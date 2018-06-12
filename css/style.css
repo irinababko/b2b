@@ -11945,7 +11945,7 @@ label {
   align-items: center;
 }
 .main__table-center .form-shipment_item label{
-  min-width: 100px;
+  min-width: 150px;
 }
 .main__table-bottom {
   min-height: 200px;
@@ -11971,6 +11971,9 @@ label {
   .main__table-center .form-shipment input[type=submit]{
     display: block;
     width: 100%;
+  }
+  .main__table-center .form-shipment_item label{
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 768px) {
