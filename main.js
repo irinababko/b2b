@@ -24,10 +24,15 @@ $(document).ready(function () {
     $('.icon-menu').click(function () {
         $('.main__left').toggleClass('main__left-active');
     });
+    // $('.icon-close').click(function () {
+    //     $('.main__left').toggleClass('main__left-active');
+    // });
+
+});
+$(document).ready(function () {
     $('.icon-close').click(function () {
         $('.main__left').toggleClass('main__left-active');
     });
-
 });
 
 $(document).ready(function () {

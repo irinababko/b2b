@@ -12006,10 +12006,6 @@ label {
   text-overflow: ellipsis;
 }
 
-.main__right.active {
-  right: 0vw;
-}
-
 @media screen and (max-width: 768px) {
   .main__right {
     position: absolute;
