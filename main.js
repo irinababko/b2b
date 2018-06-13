@@ -376,7 +376,24 @@ $( window ).resize(function(){
 });
 
 
-
+$(document).ready(function() {
+    $(".fancybox-thumb").fancybox({
+        helpers	: {
+            title	: {
+                type: 'outside'
+            },
+            thumbs	: {
+                width	: 50,
+                height	: 50
+            },
+            openEffect	: 'elastic',
+            closeEffect	: 'elastic',
+            slideShow  : true,
+            fullScreen : true,
+            closeBtn   : true
+        }
+    });
+});
 
 
 
